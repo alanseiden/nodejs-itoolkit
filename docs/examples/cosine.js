@@ -6,7 +6,7 @@ const conn = new Connection({
   transportOptions: { host: 'myhost', username: 'myuser', password: 'mypassword' },
 });
 
-const program = new ProgramCall('QC2UTIL2', { lib: 'QSYS', func: 'cos' });
+const program = new ProgramCall('QC2UTIL2', { lib: 'QSYS', func: 'cos', by: 'val' });
 
 program.addParam({ type: '8f', value: '0' });
 program.addReturn({ type: '8f', value: '' });
